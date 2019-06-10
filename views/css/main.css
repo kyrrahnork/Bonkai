@@ -1,0 +1,169 @@
+* { 
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;} 
+
+
+
+body { 
+    font-family: vernanda, helvetica, sans-serif;
+    font-size: 100%;
+    background:black;
+    } 
+
+img { 
+     max-width: 100%;
+    max-height: 100%;
+    display: block;}
+
+#logo { 
+    width: 200px; 
+    height: 200px;
+    margin: 0 auto;}
+
+/* START OF FABRICONS */
+#awesome{ 
+    float: left;
+    width: 15%;
+
+}
+
+#font-awesome { 
+    list-style: none;
+    color: white;} 
+
+#awesome li { 
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;}
+
+
+header {
+    margin-bottom: 20px;
+    width: 100%; 
+    background: white;
+} 
+
+/*START DROP DOWN  NAVIGATION*/ 
+nav {height: 50px; 
+    background: white;
+    clear: both;
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index: 10;
+    }
+
+.nav {
+    display: block;
+    font: 13px Helvetica, Tahoma, serif;
+    text-transform: uppercase;
+    padding: 0;
+    width: 30%;
+    float: right; 
+    margin-right: 10px;
+    
+}
+
+.nav li {
+    float: left;
+    width: 20%;
+    list-style: none;
+    text-align: center;
+    
+    line-height: 50px;
+}
+
+.nav .button-dropdown {
+    position: relative;
+}
+
+.nav li a {
+    display: block;
+    color: black;
+    background-color: white;
+    position: relative;
+    
+    clear: both;
+    text-decoration: none;
+}
+
+.nav li a span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+.nav li a:hover, .nav li a.dropdown-toggle.active {
+    background-color: black;
+
+    color: white;
+}
+
+.nav li a:hover span, .nav li a.dropdown-toggle.active span {
+    color: white;
+}
+
+.nav li .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.nav li .dropdown-menu li{
+    float: none;
+    width: 120%;
+ 
+}
+
+.nav li .dropdown-menu.active {
+    display: block;
+}
+
+.nav li .dropdown-menu a {
+    width: 100%;
+    text-align: center;
+    
+}
+
+/*END NAVIGATION*/
+
+
+
+
+/*BUTTONS*/
+ 
+@font-face {
+    font-family: 'aileronregular';
+    src: url('fonts/Aileron-Regular-webfont.eot');
+    src: url('fonts/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Aileron-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Aileron-Regular-webfont.woff') format('woff'),
+         url('fonts/Aileron-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+
+@font-face {
+font-family: 'flexslider-icon';
+src:url('.../fonts/flexslider-icon.eot');
+src:url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/flexslider-icon.woff') format('woff'),
+    url('../fonts/flexslider-icon.ttf') format('truetype'),
+    url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+font-weight: normal;
+font-style: normal}
+
+
+
+
+
+
+.nav-button { display: none; }
+
