@@ -75,12 +75,12 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
- width: 1600px; 
-margin: 0 auto;
+  
+ width: 50%; 
+  margin: 0 auto;
 /* ADDED WIDTH AND HEIGHT */
-
-  background: black;
-  border: 4px solid black;
+  background: black; /*changed to green to edit with borders*/
+  border: 5px solid black;
   position: relative;
   zoom: 1;
   -webkit-border-radius: 4px;
@@ -95,11 +95,14 @@ margin: 0 auto;
   zoom: 1;
 }
 .flexslider .slides img {
+ 
   height: auto;
   -moz-user-select: none;
 }
+/* HERE IS WHERE YOU CHANGE VIEWPORT SIZE */
 .flex-viewport {
-  max-height: 800px;
+  width: 100%;
+ height: 30%;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
