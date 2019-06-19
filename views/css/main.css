@@ -68,10 +68,10 @@ nav {height: 50px;
 
 .nav {
     display: block;
-    font: 13px Helvetica, Tahoma, serif;
+    font: 12px Helvetica, Tahoma, serif;
     text-transform: uppercase;
     padding: 0;
-    width: 30%;
+    width: 45%;
     float: right; 
     margin-right: 10px;
     
@@ -79,11 +79,11 @@ nav {height: 50px;
 
 .nav li {
     float: left;
-    width: 20%;
+    width: 15%;
     list-style: none;
     text-align: center;
     
-    line-height: 50px;
+    line-height: 30px;
 }
 
 .nav .button-dropdown {
@@ -108,9 +108,9 @@ nav {height: 50px;
 }
 
 .nav li a:hover, .nav li a.dropdown-toggle.active {
-    background-color: black;
+    background-color: none; /*changed hover color to black*/
 
-    color: white;
+    color: black;
 }
 
 .nav li a:hover span, .nav li a.dropdown-toggle.active span {
@@ -129,7 +129,7 @@ nav {height: 50px;
 
 .nav li .dropdown-menu li{
     float: none;
-    width: 120%;
+    width: 100%;
  
 }
 
