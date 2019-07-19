@@ -1,14 +1,7 @@
 /* NOTES: 
-FIX NAVIGATION SO THAT ELEMENTS FIT INSIDE BOXES; 
-MAKE ELEMENTS BOLD; 
-GET PICTURES FOR HOME PAGE FROM JOSE; 
+GET BONKAI INTRO PAGE PHOTO;
 
 */
-
-
-
-
-
 
 * { 
     padding: 0;
@@ -35,14 +28,14 @@ img {
 
 /* START OF FABRICONS */
 #awesome{ 
-    float: left;
+    float: right;
     width: 15%;
 
 }
 
 #font-awesome { 
     list-style: none;
-    color: white;} 
+    color: black;} 
 
 #awesome li { 
     float: left;
@@ -51,20 +44,22 @@ img {
 
 
 header {
-    margin-bottom: 150px;
     width: 100%; 
     background: white;
+    margin-bottom: 50px;
 } 
 
+
+
 /*START DROP DOWN  NAVIGATION*/ 
-nav {height: 50px; 
+nav {
     background: white;
     clear: both;
-    position: sticky;
-    position: -webkit-sticky;
-    top:0;
-    z-index: 10;
+    position: relative;
+    top: 50px;
+
     }
+
 
 .nav {
     display: block;
@@ -82,8 +77,10 @@ nav {height: 50px;
     width: 15%;
     list-style: none;
     text-align: center;
-    
+    font-weight: 900;
     line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .nav .button-dropdown {
@@ -144,7 +141,114 @@ nav {height: 50px;
 }
 
 /*END NAVIGATION*/
+/* START OF HOME PAGE*/
+#home-Logo { 
+    width: 20%; 
+    height:100px; 
+   clear: both;
+   z-index: 100000;  
+}
 
+.wrapper{ 
+    margin: 0 auto; 
+    width: 940px; 
+    background: white; 
+}
+
+#home-Statement{ 
+    background: green; 
+    width: 45%; 
+    height: 200px; 
+} 
+
+#home-photo{ 
+    background: blue; 
+    width: 32%; 
+    border: solid 1px black;
+    float: left; 
+    margin-left: 1%; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+#home-photo:nth-child(1){ 
+  
+    margin-left: 1%;
+}
+
+#home-photo:nth-child(2){ 
+    float: right;
+    margin-right: 1%;
+}
+
+#home-aside-photos{ 
+    background: green; 
+    margin: 0 auto; 
+}
+
+.offers { 
+    width: 940px; 
+    background: red; 
+    clear: both; 
+    height: 400px; 
+}
+
+/* END OF HOME PAGE*/
+
+/* START OF CONTACTS PAGE*/
+#client_Info{ 
+    width: 300px; 
+    background: green; 
+    overflow: inherit;
+    
+} 
+
+.user_Input{ 
+    height: 35px; 
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#submit { 
+    width: 100px; 
+   
+}
+/* END OF CONTACTS PAGE*/
+
+
+
+
+
+
+/* START OF INTRODUCTION PAGE*/
+#intro-Page{ 
+   background-image: url(../images/introPhoto.jpg); 
+   background-repeat: no-repeat; 
+   background-size: 100%; 
+
+}
+
+#intro-page-door{ 
+    width: 400px; 
+    height: 75px; 
+    background: white; 
+    margin-left: 250px;
+    margin-top:350px; 
+    
+}
+
+#intro-Link{ 
+    text-decoration: none;
+    color: black;
+}
+
+#home-Link { 
+    padding-top: 5%; 
+    padding-left: 10%; 
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* END OF INTRODUCTION PAGE*/
 
 
 
