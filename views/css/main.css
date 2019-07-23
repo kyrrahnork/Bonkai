@@ -222,10 +222,14 @@ nav {
 
 /* START OF INTRODUCTION PAGE*/
 #intro-Page{ 
-   background-image: url(../images/introPhoto.jpg); 
+   background-image: url(../images/introPhoto1.jpg); 
    background-repeat: no-repeat; 
-   background-size: 100%; 
+   background-size: 50%; 
+   background-position: center;
+   background-size: 45em;
+   background-position-y: 0px;
 
+   
 }
 
 #intro-page-door{ 
