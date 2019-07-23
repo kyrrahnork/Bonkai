@@ -16,7 +16,8 @@ mongoose.connection.on('open', () => {
 // define Book model in JSON key/value pairs
 // values indicate the data type of each key
  const mySchema = mongoose.Schema({
-        whole_name: { type: String, required: true },
+        first: { type: String, required: true },
+        last:String,
         phone: String,
         email: String, 
         description: String,
@@ -24,4 +25,4 @@ mongoose.connection.on('open', () => {
        
 //"inventors"- is the name of repository in itcprojects on mongoDB
 //"mySchema" are the data key:value pairs
-module.exports = mongoose.model('Bonkaiclients', mySchema); 
+module.exports = mongoose.model('bonkaiclients', mySchema); 
