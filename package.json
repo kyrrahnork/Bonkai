@@ -1,0 +1,30 @@
+{
+  "name": "bonkai",
+  "version": "1.0.0",
+  "description": "package.json for bonkai",
+  "main": "routes.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongodb": "^3.3.1",
+    "mongoose": "^5.6.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "'hello world'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josh671/Bonkai.git"
+  },
+  "keywords": [
+    "T@mo2011!"
+  ],
+  "author": "Joshua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josh671/Bonkai/issues"
+  },
+  "homepage": "https://github.com/josh671/Bonkai#readme"
+}

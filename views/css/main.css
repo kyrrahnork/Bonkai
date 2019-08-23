@@ -26,7 +26,13 @@ img {
     height: 200px;
     margin: 0 auto;}
 
+   
+a {                                  /*color of links (a href)  */
+    color: black;
+}
 /* START OF FABRICONS */
+
+
 #awesome{ 
     float: right;
     width: 15%;
@@ -194,6 +200,17 @@ nav {
 }
 
 /* END OF HOME PAGE*/
+
+/* START OF GALLERY */
+#gal-Wrapper{ 
+    width: 80%; 
+    background: white; 
+    height: 900px; 
+    margin: 0 auto; 
+    
+}
+
+/* END OF GALLERY */
 
 /* START OF CONTACTS PAGE*/
 #client_Info{ 
