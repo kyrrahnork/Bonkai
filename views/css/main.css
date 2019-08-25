@@ -21,18 +21,61 @@ img {
     max-height: 100%;
     display: block;}
 
+
+/* START OF INTRODUCTION PAGE*/
+#intro-page-header{ 
+    height: 50px; 
+    width: 100%; 
+}
+
+#intro-Page-Body{ 
+   background-image: url(../images/introPhoto1.jpg); 
+   background-repeat: no-repeat; 
+   background-size: 50%; 
+   background-position: center;
+   background-size: 45em;
+   background-position-y: 0px;
+
+   
+}
+
+#btnContainer{ 
+   margin: 0 auto;
+}
+
+#linkBtn{ 
+    color: white;
+    z-index: 1000;
+    position: fixed; 
+    top: 450px;
+    left: 300px;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-style: italic;
+    background:#00DFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+/* END OF INTRODUCTION PAGE*/
+
+
+/* START OF HOME PAGE*/
+
 #logo { 
     width: 200px; 
     height: 200px;
     margin: 0 auto;}
 
    
-a {                                  /*color of links (a href)  */
-    color: black;
+a {   /*color of links (a href)  */
+    color: black; 
 }
-/* START OF FABRICONS */
 
-
+/* start of fabricons */
 #awesome{ 
     float: right;
     width: 15%;
@@ -51,19 +94,18 @@ a {                                  /*color of links (a href)  */
 
 header {
     width: 100%; 
-    background: white;
+    background: #00DFFF;;
     margin-bottom: 50px;
 } 
 
 
 
-/*START DROP DOWN  NAVIGATION*/ 
+/*start of drop down navigation*/ 
 nav {
     background: white;
     clear: both;
     position: relative;
     top: 50px;
-
     }
 
 
@@ -96,7 +138,7 @@ nav {
 .nav li a {
     display: block;
     color: black;
-    background-color: white;
+    background-color: #00DFFF;
     position: relative;
     
     clear: both;
@@ -111,7 +153,7 @@ nav {
 }
 
 .nav li a:hover, .nav li a.dropdown-toggle.active {
-    background-color: none; /*changed hover color to black*/
+    background-color:#00DFFF; /*changed hover color to black*/
 
     color: black;
 }
@@ -146,8 +188,8 @@ nav {
     
 }
 
-/*END NAVIGATION*/
-/* START OF HOME PAGE*/
+/*end of navigation*/
+
 #home-Logo { 
     width: 20%; 
     height:100px; 
@@ -158,7 +200,7 @@ nav {
 .wrapper{ 
     margin: 0 auto; 
     width: 940px; 
-    background: white; 
+    background: #00DFFF;; 
 }
 
 #home-Statement{ 
@@ -187,7 +229,7 @@ nav {
     margin-right: 1%;
 }
 
-#home-aside-photos{ 
+#home-asside-photo{ 
     background: green; 
     margin: 0 auto; 
 }
@@ -205,10 +247,68 @@ nav {
 #gal-Wrapper{ 
     width: 80%; 
     background: white; 
-    height: 900px; 
     margin: 0 auto; 
+
+} 
+
+/* start of tab buttons */
+.tab{ 
+    overflow:hidden; 
+    border: 1px solid #ccc; 
+    background-color: #f1f1f1
+}
+
+.tab button{ 
+    background-color: inherit; 
+    float: left; 
+    border: none; 
+    outline: none; 
+    cursor: pointer;
+    padding: 14px 16px; 
+    transition: 0.3s; 
+    font-size: 17px;
+}
+
+.tab button:hover{ 
+    background-color: #00DFFF; 
+}
+
+.tab button.active { 
+    background: #ccc;
     
 }
+/* end of tab buttons */
+
+/* start of photos within tab catagories */
+.tabcontent{ 
+    display: none;
+    padding: 16px 12px; 
+    background-color: #00DFFF;
+    border-top: none;
+    height: 1000px;
+    
+}
+
+ #instagram-gallery-photo{ 
+    background: blue; 
+    width: 32%; 
+    border: solid 1px black;
+    float: left; 
+    margin-left: 1%; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+#instagram-gallery-photo:nth-child(1){ 
+  
+    margin-left: 1%;
+}
+
+#instagram-gallery-photo:nth-child(2){ 
+    float: right;
+    margin-right: 1%;
+}
+/* end of photos within tab catagories */
 
 /* END OF GALLERY */
 
@@ -233,43 +333,6 @@ nav {
 /* END OF CONTACTS PAGE*/
 
 
-
-
-
-
-/* START OF INTRODUCTION PAGE*/
-#intro-Page{ 
-   background-image: url(../images/introPhoto1.jpg); 
-   background-repeat: no-repeat; 
-   background-size: 50%; 
-   background-position: center;
-   background-size: 45em;
-   background-position-y: 0px;
-
-   
-}
-
-#intro-page-door{ 
-    width: 400px; 
-    height: 75px; 
-    background: white; 
-    margin-left: 250px;
-    margin-top:350px; 
-    
-}
-
-#intro-Link{ 
-    text-decoration: none;
-    color: black;
-}
-
-#home-Link { 
-    padding-top: 5%; 
-    padding-left: 10%; 
-    font-size: 2em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-/* END OF INTRODUCTION PAGE*/
 
 
 

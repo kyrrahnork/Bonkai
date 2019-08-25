@@ -14,69 +14,69 @@
     <link href="css/main.css" type="text/css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
+    <script src="js/gallery.js" type='text/javascript'></script>
+    <header> 
     
- <header> 
-    
-        <div id="awesome">
-            <ul id="font-awesome">
-                <li id="instagram"><a href="// place url here "><i class="fab fa-instagram"></i></a></li>
-                
-                <li id="facebook"><a href="// place url here "><i class="fab fa-facebook"></i></a></li>
-            </ul>
-                </div>
-        
-        <nav id= "primary">
-           
+            <div id="awesome">
+                <ul id="font-awesome">
+                    <li id="instagram"><a href="https://www.instagram.com/bonkaistudios/?hl=en "><i class="fab fa-instagram"></i></a></li>
+                    
+                    <li id="facebook"><a href="// place url here "><i class="fab fa-facebook"></i></a></li>
+                </ul>
+                    </div>
             
-            <!--  START OF DROP DOWN CLICK -->
-            <button class="nav-button">Toggle Navigation</button>  
-            <ul class="nav primary-nav">
-  <li>
-    <a href="home.html">
-      Home
-    </a>
-  </li>
- <li>
-    <a href="about.html">
-      About
-    </a>
-  
-  <li class="button-dropdown">
-    <a href="javascript:void(0)" class="dropdown-toggle">
-     Gallery <span>▼</span>
-    </a>
-    <ul class="dropdown-menu">
+            <nav id= "primary">
+               
+                
+                <!--  START OF DROP DOWN CLICK -->
+                <button class="nav-button">Toggle Navigation</button>  
+                <ul class="nav primary-nav">
       <li>
-        <a href="http://webdesign120.space/homework9/menu.html">
-          Photos
+        <a href="home.html">
+          Home
         </a>
       </li>
-      <li>
-        <a href="http://webdesign120.space/homework9/menu.html">
-          Videos
+     <li>
+        <a href="about.html">
+          About
         </a>
-      </li>
-      <li>
-        <a href="http://webdesign120.space/homework9/menu.html">
-          Tuna Poki w/ Rice 12$
+      
+      <li class="button-dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle">
+         Gallery <span>▼</span>
         </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="gallery.html">
+              Photos
+            </a>
+          </li>
+          <li>
+            <a href="http://webdesign120.space/homework9/menu.html">
+              Videos
+            </a>
+          </li>
+          <li>
+            <a href="http://webdesign120.space/homework9/menu.html">
+              Tuna Poki w/ Rice 12$
+            </a>
+          </li>
+        </ul>
       </li>
+      <li class="button-dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle">
+          Contact Us <span>▼</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="contacts.html">
+              Jose Castro
+            </a>
+          </li>
     </ul>
-  </li>
-  <li class="button-dropdown">
-    <a href="javascript:void(0)" class="dropdown-toggle">
-      Contact Us <span>▼</span>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="contacts.html">
-          Jose Castro
-        </a>
       </li>
-</ul>
-  </li>
-  
-</ul>
+      
+    </ul>
 
         </nav>
 <!--  END OF DROP DOWN CLICK -->
@@ -87,9 +87,47 @@
     
 <!--Start of gal-Wrapper--> 
 <div id="gal-Wrapper">
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event,'classicEvents')">Events</button>
+        <button class="tablinks" onclick="openCity(event,'shows')">shows</button>
+        <button class="tablinks" onclick="openCity(event,'sports')">Sports</button>
+        <button class="tablinks" onclick="openCity(event,'insta')">instagram</button>
+        
+    </div>
 
+    
+    <div id="classicEvents" class="tabcontent">
+        <p>weddings, quinceañera, military ball, </p>
+    </div>
 
+    <div id="shows" class="tabcontent">
+        <p>music festivals, raves, rap shows, club scenes </p>
+    </div>
 
+    <div id="sports" class="tabcontent">
+        <p>sports, jui-jitsu, basketball, football, </p>
+    </div>
+
+    <div id="insta" class="tabcontent">
+        <p>Monica De Flora</p>
+        <div id="instagram-showCase-photos"><!--Start of PHOTOS -->
+            <aside id="instagram-gallery-photo"><img src="images/bonkaiHome6.jpg" alt="Guam Island"></aside>
+            
+            <aside id="instagram-gallery-photo"><img src="images/bonkaiHome6.jpg" alt="Guam Island"></aside>
+            
+            <aside id="instagram-gallery-photo"><img src="images/bonkaiHome6.jpg" alt="Guam Island"></aside>
+            
+          </div><!--END of PHOTOS-->
+          <p>Monica De Flora</p>
+          <div id="instagram-showCase-photos"><!--Start of PHOTOS -->
+            <aside id="instagram-gallery-photo"><img src="images/bonkaiHome6.jpg" alt="Guam Island"></aside>
+            
+            <aside id="instagram-gallery-photo"><img src="images/bonkaiHome6.jpg" alt="Guam Island"></aside>
+            
+            <aside id="instagram-gallery-photo"><img src="images/bonkaiHome6.jpg" alt="Guam Island"></aside>
+            <p>Monica De Flora</p>
+          </div><!--END of PHOTOS-->
+    </div>
     
 </div>
 
