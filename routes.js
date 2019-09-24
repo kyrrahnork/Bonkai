@@ -31,7 +31,7 @@ app.post('/add', (req,res) => {
   console.log(req.body.whole_name);
 //let newItem = {'first': req.body.addItem}; 
 
-bonkaiDB.updateOne({'first':req.body.whole_name}, req.body, {upsert:true}, (err, result)=>{ 
+bonkaiDB.update({'first':req.body.whole_name, 'last':req.body.last}, req.body, {upsert:true}, (err, result)=>{ 
   if(err) return next (err);
   //console.log (result);
   res.type('text/html')

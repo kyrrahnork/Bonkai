@@ -13,7 +13,7 @@ GET BONKAI INTRO PAGE PHOTO;
 body { 
     font-family: vernanda, helvetica, sans-serif;
     font-size: 100%;
-    background:black;
+    background: white;
     } 
 
 img { 
@@ -23,10 +23,7 @@ img {
 
 
 /* START OF INTRODUCTION PAGE*/
-#intro-page-header{ 
-    height: 50px; 
-    width: 100%; 
-}
+
 
 #intro-Page-Body{ 
    background-image: url(../images/introPhoto1.jpg); 
@@ -43,12 +40,31 @@ img {
    margin: 0 auto;
 }
 
+
+
 #linkBtn{ 
     color: white;
     z-index: 1000;
     position: fixed; 
     top: 450px;
-    left: 300px;
+    left: 20%;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-style: italic;
+    background:#00DFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} 
+
+#linkBtn2{ 
+    cursor: grabbing;
+    color: white;
+    z-index: 1000;
+    position: fixed; 
+    top: 450px;
+    right: 20%;
     text-decoration: none;
     font-size: 2.5em;
     font-style: italic;
@@ -58,8 +74,10 @@ img {
     border-radius: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-
 }
+
+
+
 /* END OF INTRODUCTION PAGE*/
 
 
@@ -94,9 +112,18 @@ a {   /*color of links (a href)  */
 
 header {
     width: 100%; 
-    background: #00DFFF;;
+    background:white;
     margin-bottom: 50px;
+    border-bottom: 2px solid  #00DFFF;
 } 
+
+#home-header{ 
+    height: 950px;
+    background-image: url(../images/bonkaislide1.png); 
+    background-size: 100%;
+    border-bottom: none;
+    margin-bottom:
+}
 
 
 
@@ -104,31 +131,31 @@ header {
 nav {
     background: white;
     clear: both;
-    position: relative;
-    top: 50px;
+    position: sticky;
+    top: 100px;
+    margin-top: 100xp;
     }
 
 
 .nav {
     display: block;
-    font: 12px Helvetica, Tahoma, serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: uppercase;
     padding: 0;
-    width: 45%;
+    width: 70%;
     float: right; 
     margin-right: 10px;
+    font-size: 1.5em;
     
 }
 
 .nav li {
     float: left;
-    width: 15%;
+    width: 20%; 
     list-style: none;
     text-align: center;
-    font-weight: 900;
-    line-height: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
+    
 }
 
 .nav .button-dropdown {
@@ -138,24 +165,24 @@ nav {
 .nav li a {
     display: block;
     color: black;
-    background-color: #00DFFF;
     position: relative;
-    
     clear: both;
     text-decoration: none;
+    
 }
 
-.nav li a span {
+.nav li a span {        /*controls the arrow in navigation  */
     display: inline-block;
     margin-left: 5px;
-    font-size: 10px;
+    font-size: 15px;
     color: black;
-}
+    
+} 
 
 .nav li a:hover, .nav li a.dropdown-toggle.active {
     background-color:#00DFFF; /*changed hover color to black*/
-
-    color: black;
+    width: 100%;
+    color: white;
 }
 
 .nav li a:hover span, .nav li a.dropdown-toggle.active span {
@@ -165,58 +192,68 @@ nav {
 .nav li .dropdown-menu {
     display: none;
     position: absolute;
-    left: 0;
-    padding: 0;
-    margin: 0;
+    width: 100%;
     margin-top: 0px;
     text-align: left;
+    font-size: .750em;
 }
 
 .nav li .dropdown-menu li{
     float: none;
     width: 100%;
- 
-}
+    text-align: center;
+} 
+
+
 
 .nav li .dropdown-menu.active {
     display: block;
+  
 }
 
 .nav li .dropdown-menu a {
-    width: 100%;
+   
     text-align: center;
+    background:#00DFFF;
     
 }
 
 /*end of navigation*/
 
-#home-Logo { 
-    width: 20%; 
-    height:100px; 
-   clear: both;
-   z-index: 100000;  
-}
 
 .wrapper{ 
-    margin: 0 auto; 
-    width: 940px; 
-    background: #00DFFF;; 
+    margin: 0 300px; 
+    width: 80%; 
+    background: purple;
+   
 }
 
-#home-Statement{ 
-    background: green; 
-    width: 45%; 
-    height: 200px; 
-} 
+#home-body{ 
+    background: red;
+}
 
-#home-photo{ 
-    background: blue; 
-    width: 32%; 
-    border: solid 1px black;
-    float: left; 
+#jose-intro { 
+    width: 100%;
+    height: 500px;
+    background: blue;
+}
+
+.jose-boxes{ 
+    width: 50%; 
+    float: left;
+    height:100%; 
+    background: #00DFFF; 
+    border-left: 2px solid black; 
+}
+
+
+#home-photo{  
+    width: 32%;  
+    float: left; ;
     margin-left: 1%; 
     margin-top: 10px;
     margin-bottom: 10px; 
+
 }
 
 #home-photo:nth-child(1){ 
@@ -230,7 +267,6 @@ nav {
 }
 
 #home-asside-photo{ 
-    background: green; 
     margin: 0 auto; 
 }
 
@@ -239,6 +275,15 @@ nav {
     background: red; 
     clear: both; 
     height: 400px; 
+} 
+
+#side-nav { 
+    position: absolute;
+    width: 10%; 
+    margin-left: 35px;
+    background: green; 
+    height: 900px; 
+    clear: left;
 }
 
 /* END OF HOME PAGE*/
@@ -254,8 +299,8 @@ nav {
 /* start of tab buttons */
 .tab{ 
     overflow:hidden; 
-    border: 1px solid #ccc; 
-    background-color: #f1f1f1
+    border: 1px solid #00DFFF; 
+    background-color:white;
 }
 
 .tab button{ 
@@ -265,8 +310,8 @@ nav {
     outline: none; 
     cursor: pointer;
     padding: 14px 16px; 
-    transition: 0.3s; 
-    font-size: 17px;
+    transition: 0.2s; 
+    font-size: 1.25em;
 }
 
 .tab button:hover{ 
@@ -274,7 +319,7 @@ nav {
 }
 
 .tab button.active { 
-    background: #ccc;
+    background: #00DFFF;
     
 }
 /* end of tab buttons */
@@ -283,14 +328,12 @@ nav {
 .tabcontent{ 
     display: none;
     padding: 16px 12px; 
-    background-color: #00DFFF;
     border-top: none;
     height: 1000px;
     
 }
 
  #instagram-gallery-photo{ 
-    background: blue; 
     width: 32%; 
     border: solid 1px black;
     float: left; 
@@ -313,20 +356,63 @@ nav {
 /* END OF GALLERY */
 
 /* START OF CONTACTS PAGE*/
-#client_Info{ 
+#jose-castro{ 
+    width: 100%; 
+    background: #00DFFF; 
+}
+
+#jose-picture{ 
     width: 300px; 
+    height: 300px; 
+    background: grey; 
+}
+
+
+
+#possible-job{ 
+    width: 100%; 
+    height: 60px;
     background: green; 
-    overflow: inherit;
-    
+}
+
+
+#client_Info{ 
+    width: 35%; 
+    overflow: inherit; 
+    background: red;  
+    float: left;
 } 
+
+#client_Info:nth-child(2){ 
+    background: green;
+    width: 65%; 
+    padding-left: 10px;
+}
+
+.form-greet{ 
+    font-size: 1.5em;
+}
+
+.form-greet:nth-child(2){ 
+    margin-top:5px; 
+    font-size: 1em;
+    line-height: 1.5em;
+
+}
 
 .user_Input{ 
     height: 35px; 
     width: 100%; 
+    padding: 10px; 
     margin-bottom: 10px; 
+    border: 2px solid #00DFFF;
 }
 
 #submit { 
+    background: #00DFFF;
+    border-radius: 4px;
+    border-bottom: 2px solid black; 
+    border-right: 1px solid black;
     width: 100px; 
    
 }
