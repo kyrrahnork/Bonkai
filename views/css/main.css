@@ -1,7 +1,4 @@
-/* NOTES: 
-GET BONKAI INTRO PAGE PHOTO;
 
-*/
 
 * { 
     padding: 0;
@@ -118,11 +115,38 @@ header {
 } 
 
 #home-header{ 
-    height: 950px;
-    background-image: url(../images/bonkaislide1.png); 
+    height: 1000px;
+    background-image: url(../images/bonkaislide1.png) ;
+    background-repeat: no-repeat; 
     background-size: 100%;
-    border-bottom: none;
-    margin-bottom:
+   
+    
+}
+
+.boxes{ 
+    
+    width: 25%; 
+    height: 500px; 
+    float: left; 
+    border: 2px black solid;
+    color: grey;
+}
+
+#home-box-nav{ 
+    background:rgb(168,168,168, .5) ;
+    border-radius: 25px;
+    width: 75%; 
+    height: 75%; 
+    margin: 10% auto; 
+    text-align: center; 
+    padding-top: 35%;
+    font-size: 2.5em;
+    
+} 
+
+.boxes:hover{ 
+    color:black;
+
 }
 
 
@@ -131,16 +155,16 @@ header {
 nav {
     background: white;
     clear: both;
-    position: sticky;
     top: 100px;
     margin-top: 100xp;
     }
 
 
 .nav {
+  
     display: block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: uppercase;
+    
     padding: 0;
     width: 70%;
     float: right; 
@@ -165,7 +189,6 @@ nav {
 .nav li a {
     display: block;
     color: black;
-    position: relative;
     clear: both;
     text-decoration: none;
     
@@ -191,7 +214,7 @@ nav {
 
 .nav li .dropdown-menu {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     margin-top: 0px;
     text-align: left;
@@ -207,7 +230,7 @@ nav {
 
 
 .nav li .dropdown-menu.active {
-    display: block;
+   
   
 }
 
@@ -234,9 +257,12 @@ nav {
 
 #jose-intro { 
     width: 100%;
-    height: 500px;
+    height: 800px;
     background: blue;
+    margin-bottom: 150px;
+    
 }
+
 
 .jose-boxes{ 
     width: 50%; 
@@ -244,39 +270,23 @@ nav {
     height:100%; 
     background: #00DFFF; 
     border-left: 2px solid black; 
+    
 }
 
-
-#home-photo{  
-    width: 32%;  
-    float: left; ;
-    margin-left: 1%; 
-    margin-top: 10px;
-    margin-bottom: 10px; 
-
+#jose{ 
+    margin-left: 100px;
 }
 
-#home-photo:nth-child(1){ 
-  
-    margin-left: 1%;
+#introduction{ 
+    margin-left: 100px;
 }
 
-#home-photo:nth-child(2){ 
-    float: right;
-    margin-right: 1%;
+#introduction-paragraph{ 
+   padding: 30px; 
+   line-height: 1.25em;
+    padding: 50px;
+    font-size:1em;
 }
-
-#home-asside-photo{ 
-    margin: 0 auto; 
-}
-
-.offers { 
-    width: 940px; 
-    background: red; 
-    clear: both; 
-    height: 400px; 
-} 
-
 #side-nav { 
     position: absolute;
     width: 10%; 
