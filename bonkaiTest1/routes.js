@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/public'));
 app.post('/api/v1/bonkaiDB/add/', (req, res)=>{ 
   let newName = {'first':req.body.whole_name}; 
   console.log(newName); 
-console.log(req.body);
+  console.log(req.body);
   bonkaiDB.updateOne({'first':req.body.whole_name}, req.body, { upsert:true}, (err, result)=>{ 
     if (err) return next(err);
     res.json({name:req.body.whole_name });
@@ -29,9 +29,9 @@ console.log(req.body);
 
 app.post('/add', (req,res) => { 
   console.log(req.body.whole_name);
-//let newItem = {'first': req.body.addItem}; 
+let newItem = {'first': req.body.addItem}; 
 
-bonkaiDB.update({'first':req.body.whole_name, 'last':req.body.last}, req.body, {upsert:true}, (err, result)=>{ 
+bonkaiDB.updateOne({'first':req.body.whole_name, 'last':req.body.last}, req.body, {upsert:true}, (err, result)=>{ 
   if(err) return next (err);
   //console.log (result);
   res.type('text/html')
